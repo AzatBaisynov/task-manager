@@ -5,7 +5,7 @@ const db = require('./db/db.json')
 const uuid = require('./helpers/uuid.js')
 const fs = require('fs')
 const e = require('express')
-const PORT = 5000;
+const PORT = 80;
 
 const app = express()
 
