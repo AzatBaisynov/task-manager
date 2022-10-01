@@ -5,7 +5,7 @@ const db = require('./db/db.json')
 const uuid = require('./helpers/uuid.js')
 const fs = require('fs')
 const e = require('express')
-const PORT = 3001;
+const PORT = 5000;
 
 const app = express()
 
@@ -52,7 +52,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log('App has been started!')
 })
 
